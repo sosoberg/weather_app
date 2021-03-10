@@ -66,12 +66,12 @@ section {
 section h2 {
     font-size: 1.5vw;
     margin: 20px 0px 20px 0px;
-    border
 }
 
 .mainClass {
     margin: 5px 0px 5px 0px;
-    font-size: 1vw;
+    font-size: 1.1vw;
+    padding-bottom: 20px;
 }
 
 article {
@@ -94,7 +94,16 @@ article {
     border: 1px solid;
     border-color: white;
     margin: 20px 20px 0px 0px;
-    padding: 10px;
+    padding: 20px;
     color: white;
     border-radius: 5%;
+}
+
+.forDate {
+    font-size: 1.2vw;
+}
+
+.forContent {
+    margin-top: 10px;
+    font-size: 1.1vw;
 }
