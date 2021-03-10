@@ -1,0 +1,71 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    background-color: thistle;
+}
+
+header h1 {
+    font-size: 4vw;
+    text-align: center;
+    padding: 60px 30px 60px 30px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid: 20px;
+}
+
+aside h3 {
+    font-size: 1.3vw;
+    padding: 5px;
+}
+
+aside input {
+    margin: 5px;
+    padding-bottom: 20px;
+    width: 60%;
+    font-size: 1.2vw;
+}
+
+section {
+    border: 1px solid;
+    border-color: lightgrey;
+    margin: 20px;
+    padding: 10px;
+}
+
+section h2 {
+    font-size: 1.5vw;
+    margin: 20px 0px 20px 0px;
+}
+
+.mainClass {
+    margin: 5px 0px 5px 0px;
+    font-size: 1vw;
+}
+
+article {
+    margin: 20px;
+}
+
+.h2 {
+    font-size: 1.5vw;
+}
+
+.forDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.forecast {
+    list-style-type: none;
+    flex-direction: row; 
+    background-color: #7bc4eb;
+    border: 1px solid;
+    border-color: white;
+    margin: 20px 20px 0px 0px;
+    padding: 10px;
+    color: white;
+}
