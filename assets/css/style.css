@@ -1,32 +1,58 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 header {
-    background-color: thistle;
+    background-color: darkslategray;
 }
 
 header h1 {
     font-size: 4vw;
     text-align: center;
     padding: 60px 30px 60px 30px;
+    color: white;
 }
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid: 20px;
+    
+}
+
+aside {
+    background-color: lightgray;
+    padding-bottom: 200px;
+    border: 1px solid grey;
 }
 
 aside h3 {
     font-size: 1.3vw;
-    padding: 5px;
+    padding: 10px;
 }
 
 aside input {
-    margin: 5px;
+    margin: 10px;
     padding-bottom: 20px;
     width: 60%;
     font-size: 1.2vw;
+}
+
+.searchBtn {
+    font-size: 1.1vw;
+    background-color: #13a3f1;
+    color: white;
+}
+
+.city {
+    font-size: 1.2vw;
+    padding: 10px ;
+    background-color: white;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 85%;
+    text-align: left;
 }
 
 section {
@@ -34,11 +60,13 @@ section {
     border-color: lightgrey;
     margin: 20px;
     padding: 10px;
+    border-radius: 3%;
 }
 
 section h2 {
     font-size: 1.5vw;
     margin: 20px 0px 20px 0px;
+    border
 }
 
 .mainClass {
@@ -68,4 +96,5 @@ article {
     margin: 20px 20px 0px 0px;
     padding: 10px;
     color: white;
+    border-radius: 5%;
 }
