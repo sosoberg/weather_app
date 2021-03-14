@@ -20,7 +20,7 @@
             <aside>
                 <!-- aside with dropdown of popular cities and a search bar -->
                 <h3>Search for a City: </h3>
-                <input id="search-input" type="text"><button class="searchBtn">Search</button>
+                <input id="searchBar" type="text"><button class="searchBtn">Search</button>
                     <ul>
                         <li id="city1"><button class="city">Seattle</button></li>
                         <li id="city2"><button class="city">New York</button></li>
@@ -33,10 +33,10 @@
                     </ul>
             </aside>
             <div>
-                <section>
+                <section id='card'>
                     <!-- section 1 for city name and current weather details -->
-                    <h2 id="cityDate">Seattle 03/09/2021 *</h2>
-                        <p id="tempature" class="mainClass">Temperature: </p>
+                    <h2 id="cityName">Seattle 03/09/2021 *</h2>
+                        <p id="tempature" class="mainClass">Temperature: <span id="tempature"></span></p>
                         <p id="humidity" class="mainClass">Humidity: </p>
                         <p id="windSpeed" class="mainClass">Wind Speed: </p>
                         <p id="UVIndex" class="mainClass">UV Index: </p>
