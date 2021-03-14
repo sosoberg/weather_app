@@ -34,10 +34,11 @@
             </aside>
             <div>
                 <section id='card'>
+                    <p id="today"></p>
                     <!-- section 1 for city name and current weather details -->
-                    <h2 id="cityName">City... <span id="icon"></span></h2>
+                    <h2 id="cityName">City... <img id="icon"></img></h2>
                         <p class="mainClass">Temperature: <span id="tempature"></span></p>
-                        <p class="mainClass">Humidity: <span id="humidity"></span>%</p>
+                        <p class="mainClass">Humidity: <span id="humidity"></span></p>
                         <p class="mainClass">Wind Speed: <span id="windSpeed"></span></p>
                         <p class="mainClass">UV Index: <span id="UVIndex"></span></p>
                 </section>
@@ -48,38 +49,39 @@
                         <div id="day1" class="forecast">
                             <li id="forDate1" class="forDate">03/10/2021</li>
                             <i id="icon1" class="forContent">*</i>
-                            <li id="forTemp1" class="forContent">Temp: 90.00 F</li>
-                            <li id="forHumid1" class="forContent">Humidity: 85%</li>
+                            <li class="forContent">Temp: <span id="forTemp1"></span></li>
+                            <li class="forContent">Humidity: <span id="forHumid1"></span></li>
                         </div>
                         <div id="day2" class="forecast">
                             <li id="forDate2" class="forDate">03/11/2021</li>                    
                             <i id="icon2" class="forContent">*</i>
-                            <li id="forTemp2" class="forContent">Temp: 90.00 F</li>
-                            <li id="forHumid2" class="forContent">Humidity: 87%</li>
+                            <li id="forTemp2" class="forContent">Temp: </li>
+                            <li id="forHumid2" class="forContent">Humidity: </li>
                         </div>
                         <div id="day3" class="forecast">
                             <li id="forDate3" class="forDate">03/12/2021</li>
                             <i id="icon3" class="forContent">*</i>
-                            <li id="forTemp3" class="forContent">Temp: 90.00 F</li>
-                            <li id="forHumid3" class="forContent">Humidity: 45%</li>
+                            <li id="forTemp3" class="forContent">Temp: </li>
+                            <li id="forHumid3" class="forContent">Humidity: </li>
                         </div>
                         <div id="day4" class="forecast">
                             <li id="forDate4" class="forDate">03/13/2021</li>
                             <i id="icon4" class="forContent">*</i>
-                            <li id="forTemp4" class="forContent">Temp: 90.00 F</li>
-                            <li id="forHumid4" class="forContent">Humidity: 55%</li>
+                            <li id="forTemp4" class="forContent">Temp: </li>
+                            <li id="forHumid4" class="forContent">Humidity: </li>
                         </div>
                         <div id="day5" class="forecast">
                             <li id="forDate5" class="forDate">03/14/2021</li>
                             <i id="icon5" class="forContent">*</i>
-                            <li id="forTemp5" class="forContent">Temp: 90.00 F</li>
-                            <li id="forHumid5" class="forContent">Humidity: 33%</li>
+                            <li id="forTemp5" class="forContent">Temp: </li>
+                            <li id="forHumid5" class="forContent">Humidity: </li>
                         </div>
                     </div>
                 </article>
             </div>
             
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="./assets/js/script.js" async defer></script>
     </body>
 </html>
