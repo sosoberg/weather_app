@@ -75,6 +75,20 @@ section h2 {
     margin: 20px 0px 20px 0px;
 }
 
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr
+
+}
+
+#icon {
+    border: 2px solid #1167b1;
+    margin-right: 30px;
+    height: 30%;
+    width: 10%;
+}
+
 .mainClass {
     margin: 5px 0px 5px 0px;
     font-size: 1.1vw;

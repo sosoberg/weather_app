@@ -34,47 +34,54 @@
             </aside>
             <div>
                 <section id='card'>
-                    <p id="today"></p>
-                    <!-- section 1 for city name and current weather details -->
-                    <h2 id="cityName">City... <img id="icon"></img></h2>
-                        <p class="mainClass">Temperature: <span id="tempature"></span></p>
-                        <p class="mainClass">Humidity: <span id="humidity"></span></p>
-                        <p class="mainClass">Wind Speed: <span id="windSpeed"></span></p>
-                        <p class="mainClass">UV Index: <span id="UVIndex"></span></p>
+                    <div class='grid'>
+                        <div>
+                            <p id="today"></p>
+                            <!-- section 1 for city name and current weather details -->
+                            <h2 id="cityName">City... </h2>
+                                
+                                <p class="mainClass">Temperature: <span id="tempature"></span></p>
+                                <p class="mainClass">Humidity: <span id="humidity"></span></p>
+                                <p class="mainClass">Wind Speed: <span id="windSpeed"></span></p>
+                        </div>
+                        <div>
+                            <img src='http://openweathermap.org/img/wn/04d.png' id="icon"></img>
+                        <div>
+                    </div>
                 </section>
                 <article>
                     <!-- section 2 for 5 days forecast -->
                     <h2 class="h2">5-Day Forecast: <h2>
                     <div class="forDiv">
                         <div id="day1" class="forecast">
-                            <li id="forDate1" class="forDate">03/10/2021</li>
-                            <i id="icon1" class="forContent">*</i>
+                            <li id="forDate1" class="forDate"></li>
+                            <img id="icon1" src='http://openweathermap.org/img/wn/04d.png' class="forContent"></img>
                             <li class="forContent">Temp: <span id="forTemp1"></span></li>
                             <li class="forContent">Humidity: <span id="forHumid1"></span></li>
                         </div>
                         <div id="day2" class="forecast">
-                            <li id="forDate2" class="forDate">03/11/2021</li>                    
-                            <i id="icon2" class="forContent">*</i>
-                            <li id="forTemp2" class="forContent">Temp: </li>
-                            <li id="forHumid2" class="forContent">Humidity: </li>
+                            <li id="forDate2" class="forDate"></li>                    
+                            <img id="icon2" src='http://openweathermap.org/img/wn/04d.png' class="forContent"></img>
+                            <li class="forContent">Temp: <span id="forTemp2"></span></li>
+                            <li class="forContent">Humidity: <span id="forHumid2"></span></li>
                         </div>
                         <div id="day3" class="forecast">
-                            <li id="forDate3" class="forDate">03/12/2021</li>
-                            <i id="icon3" class="forContent">*</i>
-                            <li id="forTemp3" class="forContent">Temp: </li>
-                            <li id="forHumid3" class="forContent">Humidity: </li>
+                            <li id="forDate3" class="forDate"></li>
+                            <img id="icon3" src='http://openweathermap.org/img/wn/04d.png' class="forContent"></img>
+                            <li class="forContent">Temp: <span id="forTemp3"></span></li>
+                            <li class="forContent">Humidity: <span id="forHumid3"></span></li>
                         </div>
                         <div id="day4" class="forecast">
-                            <li id="forDate4" class="forDate">03/13/2021</li>
-                            <i id="icon4" class="forContent">*</i>
-                            <li id="forTemp4" class="forContent">Temp: </li>
-                            <li id="forHumid4" class="forContent">Humidity: </li>
+                            <li id="forDate4" class="forDate"></li>
+                            <img id="icon4" src='http://openweathermap.org/img/wn/04d.png' class="forContent"></img>
+                            <li class="forContent">Temp: <span id="forTemp4"></span></li>
+                            <li class="forContent">Humidity: <span id="forHumid4"></span></li>
                         </div>
                         <div id="day5" class="forecast">
-                            <li id="forDate5" class="forDate">03/14/2021</li>
-                            <i id="icon5" class="forContent">*</i>
-                            <li id="forTemp5" class="forContent">Temp: </li>
-                            <li id="forHumid5" class="forContent">Humidity: </li>
+                            <li id="forDate5" class="forDate"></li>
+                            <img id="icon5" src='http://openweathermap.org/img/wn/04d.png' class="forContent"></img>
+                            <li class="forContent">Temp: <span id="forTemp5"></span></li>
+                            <li class="forContent">Humidity: <span id="forHumid5"></span></li>
                         </div>
                     </div>
                 </article>

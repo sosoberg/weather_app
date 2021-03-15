@@ -37,7 +37,8 @@ let weather = {
 
         // call data and place in the HTML
         document.querySelector('#cityName').innerHTML = name;
-        //document.querySelector('#icon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
+        document.querySelector('#icon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
+        console.log(icon)
         document.querySelector('#humidity').innerHTML = humidity + '%';
         document.querySelector('#windSpeed').innerHTML = speed + ' MPH';
         document.querySelector('#tempature').innerHTML = temp + ' F';
@@ -60,11 +61,51 @@ let forecastWeather = {
     },
     displayWeather: function(data) {
 
-        const { temp, humidity } = data.list[0].main;
-        console.log(temp, humidity);
+        var temp1 = data.list[0].main.temp;
+        var humid1 = data.list[0].main.humidity;
+        var icon1 = data.list[0].weather[0].icon;
+        console.log(temp1)
+        
+        document.querySelector('#forTemp1').innerHTML = temp1 + ' F';
+        document.querySelector('#forHumid1').innerHTML = humid1 + '%';
+        document.querySelector('#icon1').src = 'http://openweathermap.org/img/wn/' + icon1 + '.png';
 
-        document.querySelector('#forTemp1').innerHTML = temp + ' F';
-        document.querySelector('#forHumid1').innerHTML = humidity + '%';
+        var temp2 = data.list[1].main.temp;
+        var humid2 = data.list[1].main.humidity;
+        var icon2 = data.list[1].weather[0].icon;
+        
+        
+        document.querySelector('#forTemp2').innerHTML = temp2 + ' F';
+        document.querySelector('#forHumid2').innerHTML = humid2 + '%';
+        document.querySelector('#icon2').src = 'http://openweathermap.org/img/wn/' + icon2 + '.png';
+
+        var temp3 = data.list[2].main.temp;
+        var humid3 = data.list[2].main.humidity;
+        var icon3 = data.list[2].weather[0].icon;
+        
+        
+        document.querySelector('#forTemp3').innerHTML = temp3 + ' F';
+        document.querySelector('#forHumid3').innerHTML = humid3 + '%';
+        document.querySelector('#icon3').src = 'http://openweathermap.org/img/wn/' + icon3 + '.png';
+
+        var temp4 = data.list[3].main.temp;
+        var humid4 = data.list[3].main.humidity;
+        var icon4 = data.list[3].weather[0].icon;
+        
+        
+        document.querySelector('#forTemp4').innerHTML = temp4 + ' F';
+        document.querySelector('#forHumid4').innerHTML = humid4 + '%';
+        document.querySelector('#icon4').src = 'http://openweathermap.org/img/wn/' + icon4 + '.png';
+
+        var temp5 = data.list[4].main.temp;
+        var humid5 = data.list[4].main.humidity;
+        var icon5 = data.list[4].weather[0].icon;
+        
+        
+        document.querySelector('#forTemp5').innerHTML = temp5 + ' F';
+        document.querySelector('#forHumid5').innerHTML = humid5 + '%';
+        document.querySelector('#icon5').src = 'http://openweathermap.org/img/wn/' + icon5 + '.png';
+        console.log(icon5)
     },
     search: function () {
         this.forecast(document.querySelector('#searchBar').value);
@@ -75,7 +116,16 @@ document.querySelector('.searchBtn').addEventListener('click', function () {
     weather.search();
     forecastWeather.search();
 
+var city1 = document.querySelector('#city1');
+city1.addEventListener('click', function() {
+    city = 'seattle';
+    forecastWeather('seattle');
+    
+})
+
 });
+
+
 
 
 
