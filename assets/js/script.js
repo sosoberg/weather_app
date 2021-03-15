@@ -20,7 +20,7 @@ document.querySelector('#forDate5').innerHTML = sixthDay.format("MMM Do, YYYY")
 let weather = {
     presentWeather: function (city) {
         fetch (
-            'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=b8b1e554d2f82db6bf0383dbd3f679e8'
+            'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=b8b1e554d2f82db6bf0383dbd3f679e8'
         ).then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
@@ -37,7 +37,7 @@ let weather = {
 
         // call data and place in the HTML
         document.querySelector('#cityName').innerHTML = name;
-        document.querySelector('#icon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
+        document.querySelector('#icon').src = 'https://openweathermap.org/img/wn/' + icon + '@2x.png';
         console.log(icon)
         document.querySelector('#humidity').innerHTML = humidity + '%';
         document.querySelector('#windSpeed').innerHTML = speed + ' MPH';
@@ -53,7 +53,7 @@ let weather = {
 let forecastWeather = {
     forecast: function (city) {
         fetch (
-            'http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&appid=b8b1e554d2f82db6bf0383dbd3f679e8'
+            'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&appid=b8b1e554d2f82db6bf0383dbd3f679e8'
         ).then ((response) => response.json())
 
         //bring displayWeather function here via this
@@ -68,7 +68,7 @@ let forecastWeather = {
         
         document.querySelector('#forTemp1').innerHTML = temp1 + ' F';
         document.querySelector('#forHumid1').innerHTML = humid1 + '%';
-        document.querySelector('#icon1').src = 'http://openweathermap.org/img/wn/' + icon1 + '.png';
+        document.querySelector('#icon1').src = 'https://openweathermap.org/img/wn/' + icon1 + '.png';
 
         var temp2 = data.list[1].main.temp;
         var humid2 = data.list[1].main.humidity;
@@ -77,7 +77,7 @@ let forecastWeather = {
         
         document.querySelector('#forTemp2').innerHTML = temp2 + ' F';
         document.querySelector('#forHumid2').innerHTML = humid2 + '%';
-        document.querySelector('#icon2').src = 'http://openweathermap.org/img/wn/' + icon2 + '.png';
+        document.querySelector('#icon2').src = 'https://openweathermap.org/img/wn/' + icon2 + '.png';
 
         var temp3 = data.list[2].main.temp;
         var humid3 = data.list[2].main.humidity;
@@ -86,7 +86,7 @@ let forecastWeather = {
         
         document.querySelector('#forTemp3').innerHTML = temp3 + ' F';
         document.querySelector('#forHumid3').innerHTML = humid3 + '%';
-        document.querySelector('#icon3').src = 'http://openweathermap.org/img/wn/' + icon3 + '.png';
+        document.querySelector('#icon3').src = 'https://openweathermap.org/img/wn/' + icon3 + '.png';
 
         var temp4 = data.list[3].main.temp;
         var humid4 = data.list[3].main.humidity;
@@ -95,7 +95,7 @@ let forecastWeather = {
         
         document.querySelector('#forTemp4').innerHTML = temp4 + ' F';
         document.querySelector('#forHumid4').innerHTML = humid4 + '%';
-        document.querySelector('#icon4').src = 'http://openweathermap.org/img/wn/' + icon4 + '.png';
+        document.querySelector('#icon4').src = 'https://openweathermap.org/img/wn/' + icon4 + '.png';
 
         var temp5 = data.list[4].main.temp;
         var humid5 = data.list[4].main.humidity;
@@ -104,7 +104,7 @@ let forecastWeather = {
         
         document.querySelector('#forTemp5').innerHTML = temp5 + ' F';
         document.querySelector('#forHumid5').innerHTML = humid5 + '%';
-        document.querySelector('#icon5').src = 'http://openweathermap.org/img/wn/' + icon5 + '.png';
+        document.querySelector('#icon5').src = 'https://openweathermap.org/img/wn/' + icon5 + '.png';
         console.log(icon5)
     },
     search: function () {
