@@ -22,7 +22,7 @@ main {
 
 aside {
     background-color: #2a9df4;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     border: 1px solid grey;
 }
 
@@ -52,6 +52,7 @@ aside input {
     margin-left: 10px;
     margin-right: 15px;
     width: 85%;
+    height: 50px;
     text-align: left;
     color: white;
 }

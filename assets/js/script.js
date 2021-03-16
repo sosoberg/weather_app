@@ -42,10 +42,30 @@ let weather = {
         document.querySelector('#humidity').innerHTML = humidity + '%';
         document.querySelector('#windSpeed').innerHTML = speed + ' MPH';
         document.querySelector('#tempature').innerHTML = temp + ' F';
+        
+        // key is the amount of items in local storage
+        var length = localStorage.length
+        var storage = localStorage.setItem(length, name);
+
+        
+        document.querySelector('#city1').innerHTML = localStorage.getItem('0')
+        document.querySelector('#city2').innerHTML = localStorage.getItem('1')
+        document.querySelector('#city3').innerHTML = localStorage.getItem('2')
+        document.querySelector('#city4').innerHTML = localStorage.getItem('3')
+        document.querySelector('#city5').innerHTML = localStorage.getItem('4')
+        document.querySelector('#city6').innerHTML = localStorage.getItem('5')
+        document.querySelector('#city7').innerHTML = localStorage.getItem('6')
+        document.querySelector('#city8').innerHTML = localStorage.getItem('7')
+        console.log(length)
+
+        if (localStorage.length > 8) {
+            localStorage.clear('0');
+        }
     },
     search: function () {
         this.presentWeather(document.querySelector('#searchBar').value);
     }
+    
 };
 
 
@@ -115,15 +135,19 @@ let forecastWeather = {
 document.querySelector('.searchBtn').addEventListener('click', function () {
     weather.search();
     forecastWeather.search();
-
-var city1 = document.querySelector('#city1');
-city1.addEventListener('click', function() {
-    city = 'seattle';
-    forecastWeather('seattle');
-    
-})
-
 });
+
+//
+// var city1 = document.querySelector('#city1');
+// city1.addEventListener('click', function() {
+//     city = localStorage.getItem('0');
+//     console.log(city)
+//     weather.displayWeather();
+//     forecastWeather.displayWeather();
+    
+// });
+
+
 
 
 
